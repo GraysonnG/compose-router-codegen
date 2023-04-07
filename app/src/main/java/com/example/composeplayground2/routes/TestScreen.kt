@@ -11,17 +11,6 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 import com.blanktheevil.router.ComposableRoute
 
-//object TestScreen: Route() {
-//    override val id: String
-//        get() = "test"
-//
-//    @OptIn(ExperimentalMaterial3Api::class)
-//    @Composable
-//    override fun Screen(navController: NavController) {
-//
-//    }
-//}
-
 const val TEST_ROUTE = "test"
 
 @OptIn(ExperimentalMaterial3Api::class)

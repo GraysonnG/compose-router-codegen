@@ -9,23 +9,6 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.NavHost
 import com.blanktheevil.router.Routes
 
-
-abstract class Route {
-    abstract val id: String
-
-    @Composable
-    abstract fun Screen(navController: NavController)
-
-    context(NavGraphBuilder, NavController)
-    operator fun invoke() {
-        composable(
-            this@Route.id
-        ) {
-            Screen(this@NavController)
-        }
-    }
-}
-
 object Router {
     @Composable
     fun NavGraph(
